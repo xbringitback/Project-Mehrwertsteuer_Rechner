@@ -1,0 +1,95 @@
+@font-face {
+    font-family: roboto;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: robotob;
+    src: url(./fonts/Roboto-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+html {
+    font-size: 62.5%;
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+img {
+    max-width: 100%;
+    width: 30rem;
+}
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: robotoB, Arial, Helvetica, sans-serif;
+}
+
+h2,h3 {
+    font-size: 2rem;
+}
+label, p {
+    font-size: 1.5rem;
+}
+span {
+    color: rgba(218, 31, 31, 0.873);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(400deg,
+    rgba(14, 106, 94, 0.778),
+    rgba(28, 14, 106, 0.789));
+
+}
+form {
+    box-shadow: rgba(0, 0, 0, 0.815) 0px 5px 100px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 4rem 0rem;
+    transform: scale(1.2);
+}
+input[type="radio"] {
+    transform: scale(1.5);
+    margin:0 8px;
+    accent-color: rgba(14, 106, 94, 0.778);
+}
+input[type="number"] {
+    height: 3rem;
+    width: 20rem;
+    padding: 5px;
+    border: none;
+    box-shadow: rgb(0, 0, 0) 0px 0px 4px;
+}
+input[type="submit"] {
+    height: 3rem;
+    width: 18rem;
+    border: none;
+    background-color: rgba(14, 106, 94, 0.778);
+}
+input[type="submit"]:active {
+    background-color:rgba(28, 14, 106, 0.789);
+    transition: opacity 2.3s ease-in-out;
+}
+
+.ohnemwst div {
+    display: flex;
+    justify-content: space-around;
+}
+.ergebnis-wrapper h2 {
+    font-family: "robotob", Arial, Helvetica, sans-serif;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+article {
+    display: flex;
+    justify-content: space-between;
+}
+

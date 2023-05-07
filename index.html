@@ -13,36 +13,47 @@
         <section>
             <div>
                 <h2>Was soll berechnet werden?</h2>
-                <input type="radio" name="steuer" class="steuer1">
+                <input type="radio" name="steuer" class="steuer1" checked>
                 <label for="steuer1"> Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
                 <input type="radio" name="steuer" class="steuer2">
                 <label for="steuer2">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
             </div>
             <div>
                 <h2>Mehrwertsteuersatz</h2>
-                <input type="radio" name="steuer1" class="steuerpro1">
+                <input type="radio" name="steuer1" class="steuerpro1" checked>
                 <label for="steuerpro1">19 %</label>
                 <input type="radio" name="steuer1" class="steuerpro2">
                 <label for="steuerpro2">7 %</label>
             </div>
-            <div>
+            <div class="ohnemwst">
                 <h2>Nettobetrag (Preis ohne Mehrwertsteuer) in Euro <span>*</span></h2>
-                <input type="text" id="input" class="input" placeholder="z.B 30€">
-                <input onclick="calculate()" type="submit" value="berechnen" class="btn">
+                <div>
+                    <input type="number" id="input" class="input" placeholder="z.B 30€" required step="0.01">
+                    <input onclick="calculate()" type="submit" value="berechnen" class="btn">
+                </div>
+
             </div>
-            <h2> Ergebnis</h2>
-            <div>
-                <h2>Mehrwertsteuerbetrag</h2>
-                <p id="output1">€</p>
-            </div>
-            <div>
-                <h2>Bruttobetrag (Endpreis)</h2>
-                <p id="output2">€</p>
-            </div>
-            <div>
-                <h2>NettoBetrag</h2>
-                <p id="output3">€</p>
-            </div>
+            <article>
+                <div class="ergebnis-wrapper">
+                    <h2>Ergebnis</h2>
+                    <div>
+                        <h3>Mehrwertsteuerbetrag</h3>
+                        <p id="output1">€</p>
+                    </div>
+                    <div>
+                        <h3>Bruttobetrag (Endpreis)</h3>
+                        <p id="output2">€</p>
+                    </div>
+                    <div>
+                        <h3>Nettobetrag</h3>
+                        <p id="output3">€</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/img/pack-of-dollars-money-clipart-design-illustration-free-png.webp" alt="">
+                </div>
+            </article>
+
 
         </section>
     </form>
